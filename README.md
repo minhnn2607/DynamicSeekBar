@@ -7,7 +7,7 @@ Add dependency to your __build.gradle__
 
 ```groovy		
 maven {
-    url "https://dl.bintray.com/minhnn2607/seekbar"
+    url "https://dl.bintray.com/minhnn2607/maven"
 }
 ```	
 ```groovy		
