@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dms="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="2dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/arrow"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginBottom="-4dp"
+            android:background="@drawable/triangle_shape"
+            android:rotation="180"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <vn.nms.dynamic_seekbar.CustomSeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="10"
+                android:progress="5"
+                android:splitTrack="false"
+                dms:dms_progressDrawable="@drawable/progress_drawable_default"
+                dms:dms_thumbDrawable="@drawable/custom_seekbar_thumb_default"
+                dms:dms_thumbSize="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+

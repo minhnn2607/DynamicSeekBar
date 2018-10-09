@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Dynamic SeekBar</string>
+    <string name="init_info_text">Brightness 50%</string>
+</resources>

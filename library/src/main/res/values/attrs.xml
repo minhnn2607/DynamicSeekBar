@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomSeekBar">
+        <attr name="dms_rotation">
+            <enum name="CW90" value="90" />
+            <enum name="CW270" value="270" />
+        </attr>
+        <attr name="dms_thumbSize" format="dimension"/>
+        <attr name="dms_thumbDrawable" format="reference"/>
+        <attr name="dms_outsideControl" format="boolean"/>
+        <attr name="dms_background" format="reference"/>
+        <attr name="dms_progressDrawable" format="reference"/>
+        <attr name="dms_isHideProgressInit" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="DynamicSeekBarView">
+        <attr name="dsbv_thumbSize" format="dimension"/>
+        <attr name="dsbv_thumbDrawable" format="reference"/>
+        <attr name="dsbv_progressColor" format="reference"/>
+        <attr name="dsbv_progressBackgroundColor" format="reference"/>
+        <attr name="dsbv_progressDrawable" format="reference"/>
+        <attr name="dsbv_infoSize" format="dimension"/>
+        <attr name="dsbv_infoTextSize" format="dimension"/>
+        <attr name="dsbv_infoTextColor" format="reference"/>
+        <attr name="dsbv_infoRadius" format="integer"/>
+        <attr name="dsbv_infoBackgroundColor" format="reference"/>
+        <attr name="dsbv_infoInitText" format="reference"/>
+        <attr name="dsbv_max" format="integer"/>
+        <attr name="dsbv_progress" format="integer"/>
+        <attr name="dsbv_isHideInfo" format="boolean"/>
+    </declare-styleable>
+</resources>
