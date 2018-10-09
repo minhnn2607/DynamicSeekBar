@@ -7,20 +7,16 @@ Add dependency to your __build.gradle__
 
 ```groovy		
 maven {
-  url "https://dl.bintray.com/moninc/maven"
-}	
+url "https://dl.bintray.com/minhnn2607/seekbar"
+}
 ```	
 ```groovy		
-compile 'vn.n2m.dynamic_seekbar:DynamicSeekBar:1.0:@aar'
+compile 'vn.nms.dynamic_seekbar:DynamicSeekBar:1.0'
 ```	
 ## Usage
 Add __DynamicSeekBarView__ to your layout
 
 ```groovy	
- <vn.nms.dynamic_seekbar.DynamicSeekBarView
-        android:id="@+id/dynamicSeekbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         app:dsbv_progressColor="@color/yellow"                  //Set progress color
         app:dsbv_progressBackgroundColor="@color/gray_bold"     //Set progress background color
         app:dsbv_infoTextSize="12dp"                            //Set text size popup info
@@ -31,8 +27,6 @@ Add __DynamicSeekBarView__ to your layout
         app:dsbv_progress="50"                                  //Init progress value of seekbar
         app:dsbv_thumbDrawable="@drawable/ic_sun"               //Set thumb drawable
         app:dsbv_infoInitText="@string/init_info_text"          //Init popup info text
-	/>       
-        
         dsbv_isHideInfo="false/true"                            //Show/hide popup info
         dsbv_progressDrawable="@drawable/progress_drawable"     //Set progress drawable
 ```
