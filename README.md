@@ -7,7 +7,7 @@ Add dependency to your __build.gradle__
 
 ```groovy		
 maven {
-    url "https://dl.bintray.com/minhnn2607/seekbar"
+    url "https://dl.bintray.com/minhnn2607/maven"
 }
 ```	
 ```groovy		
@@ -27,8 +27,8 @@ Add __DynamicSeekBarView__ to your layout
         app:dsbv_progress="50"                                  //Init progress value of seekbar
         app:dsbv_thumbDrawable="@drawable/ic_sun"               //Set thumb drawable
         app:dsbv_infoInitText="@string/init_info_text"          //Init popup info text
-        app:dsbv_isHideInfo="false/true"                            //Show/hide popup info
-        app:dsbv_progressDrawable="@drawable/progress_drawable"     //Set progress drawable
+        app:dsbv_isHideInfo="false/true"                        //Show/hide popup info
+        app:dsbv_progressDrawable="@drawable/progress_drawable" //Set progress drawable
 ```
 
 ## Develop By
