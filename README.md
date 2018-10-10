@@ -6,9 +6,7 @@ Custom SeekBar with your thumb, progress bar and popup info...
 Add dependency to your __build.gradle__
 
 ```groovy		
-maven {
-    url "https://dl.bintray.com/minhnn2607/maven"
-}
+jcenter()
 ```	
 ```groovy		
 compile 'vn.nms.dynamic_seekbar:DynamicSeekBar:1.0'
