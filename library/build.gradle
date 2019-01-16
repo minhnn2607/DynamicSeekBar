@@ -6,7 +6,7 @@ Properties properties = new Properties()
 properties.load(new FileInputStream(file('library.properties')))
 
 project.archivesBaseName = properties.getProperty('name')
-group = properties.getProperty('group')
+group = properties.getProperty('groupId')
 
 version =  properties.getProperty('version')
 
@@ -42,7 +42,7 @@ install {
                 name  properties.getProperty('name')
                 description  properties.getProperty('description')
                 url  properties.getProperty('siteUrl')
-                artifactId  properties.getProperty('name')
+                artifactId  properties.getProperty('artifactId')
                 version  properties.getProperty('version')
                 licenses {
                     license {
@@ -67,12 +67,9 @@ install {
     }
 }
 
-Properties secret = new Properties()
-secret.load(project.rootProject.file('local.properties').newDataInputStream())
-
 bintray {
-    user = secret.getProperty("bintray.user")
-    key = secret.getProperty("bintray.apikey")
+    user = properties.getProperty("bintrayUser")
+    key = properties.getProperty("bintrayApikey")
 
     configurations = ['archives']
     pkg {
