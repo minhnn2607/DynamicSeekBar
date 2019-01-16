@@ -9,7 +9,7 @@ Add dependency to your __build.gradle__
 jcenter()
 ```	
 ```groovy		
-compile 'vn.nms.dynamic_seekbar:DynamicSeekBar:1.0'
+compile 'vn.nms.dseekbar:DMSeekBar:1.0.0'
 ```	
 ## Usage
 Add __DynamicSeekBarView__ to your layout
